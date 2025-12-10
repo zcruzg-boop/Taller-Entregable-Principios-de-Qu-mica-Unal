@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mecanismos Catalíticos - Menú de Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a2980, #26d0ce);
+            color: #333;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: #1a2980;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+        }
+        
+        .subtitle {
+            color: #26d0ce;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+        
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .menu-card {
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .menu-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .card-header {
+            background: linear-gradient(to right, #1a2980, #26d0ce);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .card-header h2 {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+        
+        .card-body {
+            padding: 25px;
+        }
+        
+        .card-body h3 {
+            color: #1a2980;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #26d0ce;
+        }
+        
+        .topics-list {
+            list-style-type: none;
+        }
+        
+        .topics-list li {
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            background-color: rgba(38, 208, 206, 0.1);
+            border-left: 4px solid #1a2980;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+        
+        .topics-list li:hover {
+            background-color: rgba(38, 208, 206, 0.25);
+        }
+        
+        .topic-icon {
+            color: #1a2980;
+            margin-right: 15px;
+            font-size: 1.2rem;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: white;
+            font-size: 0.9rem;
+        }
+        
+        .footer-note {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+            font-style: italic;
+        }
+        
+        @media (max-width: 768px) {
+            .menu-container {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .card-header h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-flask"></i> Mecanismos Catalíticos</h1>
+            <p class="subtitle">Menú de inicio para temas de catálisis enzimática y degradación catalítica</p>
+        </header>
+        
+        <main class="menu-container">
+            <!-- Tarjeta 1: Mecanismos de Acción Catalítica -->
+            <div class="menu-card">
+                <div class="card-header">
+                    <h2><i class="fas fa-cogs"></i> MECANISMOS DE ACCIÓN CATALÍTICA</h2>
+                    <p>Modelos y conceptos fundamentales</p>
+                </div>
+                <div class="card-body">
+                    <h3><i class="fas fa-list-alt"></i> Temas incluidos:</h3>
+                    <ul class="topics-list">
+                        <!-- En tu archivo index.html, en la sección de Mecanismos de Acción Catalítica -->
+<li><span class="topic-icon"><i class="fas fa-key"></i></span> 
+    <a href="llave-cerradura.html" target="_blank">Modelo Llave-Cerradura (Lock-and-Key)</a>
+</li>
+<li><span class="topic-icon"><i class="fas fa-puzzle-piece"></i></span> 
+    <a href="sitio-inducido.html" target="_blank">Modelo de Sitio Inducido</a>
+</li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            
+            <!-- Tarjeta 2: Mecanismos de Degradación Catalítica -->
+            <div class="menu-card">
+                <div class="card-header">
+                    <h2><i class="fas fa-exclamation-triangle"></i> MECANISMOS DE DEGRADACIÓN CATALÍTICA</h2>
+                    <p>Factores que afectan la actividad catalítica</p>
+                </div>
+                <div class="card-body">
+                    <h3><i class="fas fa-list-alt"></i> Temas incluidos:</h3>
+                    <ul class="topics-list">
+                        <!-- En tu archivo index.html, en la sección de Mecanismos de Degradación Catalítica -->
+<li><span class="topic-icon"><i class="fas fa-tachometer-alt"></i></span> 
+    <a href="saturacion.html" target="_blank">Saturación del Sustrato</a>
+</li>
+<li><span class="topic-icon"><i class="fas fa-skull-crossbones"></i></span> 
+    <a href="envenenamiento.html" target="_blank">Envenenamiento del Catalizador</a>
+</li>
+<li><span class="topic-icon"><i class="fas fa-ban"></i></span> 
+    <a href="bloqueo.html" target="_blank">Bloqueo del Sitio Activo</a>
+</li>
+                    </ul>
+                </div>
+            </div>
+
+          <!-- Tarjeta 2: Modelos Cinéticos -->
+            <div class="menu-card">
+                <div class="card-header">
+                    <h2><i class="fas fa-cogs"></i> Modelos Cinéticos</h2>
+                    <p>Modelos y conceptos fundamentales</p>
+                </div>
+                <div class="card-body">
+                    <h3><i class="fas fa-list-alt"></i> Temas incluidos:</h3>
+                    <ul class="topics-list">
+                        <!-- En tu archivo index.html, en la sección de Modelos Cinéticos -->
+<li><span class="topic-icon"><i class="fas fa-chart-bar"></i></span> 
+    <a href="michaelis-menten.html" target="_blank">Cinética de Michaelis-Menten</a>
+</li>
+<li><span class="topic-icon"><i class="fas fa-project-diagram"></i></span> 
+    <a href="lineweaver-burk.html" target="_blank">Representación de Lineweaver-Burk</a>
+</li>
+<li><span class="topic-icon"><i class="fas fa-exchange-alt"></i></span> 
+    <a href="pseudo-cinetica.html" target="_blank">Pseudo-cinética de Reacción</a>
+</li>
+                    </ul>
+                </div>
+            </div>
+
+        </main>
+        
+        <footer>
+            <p>Menú de inicio para estudios de mecanismos catalíticos | Diseñado para GitHub</p>
+            <div class="footer-note">
+                <p><i class="fas fa-lightbulb"></i> Este menú organiza los conceptos fundamentales de la catálisis enzimática basándose en los términos proporcionados en el archivo de referencia.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Añadir interacción a los elementos de la lista
+        document.querySelectorAll('.topics-list li').forEach(item => {
+            item.addEventListener('click', function() {
+                // Cambiar temporalmente el color de fondo al hacer clic
+                const originalColor = this.style.backgroundColor;
+                this.style.backgroundColor = 'rgba(38, 208, 206, 0.4)';
+                
+                // Mostrar el nombre del tema seleccionado
+                const topicName = this.textContent.trim();
+                alert(`Has seleccionado: ${topicName}\n\nEste tema forma parte del estudio de los mecanismos catalíticos.`);
+                
+                // Restaurar el color después de un breve tiempo
+                setTimeout(() => {
+                    this.style.backgroundColor = originalColor;
+                }, 500);
+            });
+        });
+        
+        // Efecto adicional para las tarjetas
+        document.querySelectorAll('.menu-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                const header = this.querySelector('.card-header');
+                header.style.background = 'linear-gradient(to right, #26d0ce, #1a2980)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                const header = this.querySelector('.card-header');
+                header.style.background = 'linear-gradient(to right, #1a2980, #26d0ce)';
+            });
+        });
+    </script>
+</body>
+</html>
